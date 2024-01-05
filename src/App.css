@@ -1,0 +1,88 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  /*text-align: center;*/
+}
+
+.selectorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 241px;
+  height: 141px;
+  background-color: #d1e7dd;
+  border-radius: 4px;
+}
+
+.selectorRectangle {
+  width: 235px;
+  height: 72px;
+  background-color: #ffffff;
+  margin-top: 19px;
+}
+
+.dropdown {
+  width: 235px;
+  position: relative;
+  margin-top: 4px;
+  color: black;
+  z-index: 1;
+}
+
+.dropdown:focus {
+  border: 1px solid #eaf2ff;
+}
+.dropdown:focus .dropdownBtn {
+  border: none;
+  border-radius: 0;
+}
+
+.dropdownBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-radius: 4px;
+  border: #479f76 1px solid;
+  background-color: #ffffff;
+  padding: 0 12px;
+}
+
+.dropdownContent {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-top: 1px solid #eaf2ff;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.dropdownItemCheckbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #95befc;
+  border-radius: 2px;
+}
+
+.checked {
+  background: #95befc
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M10 3L4.5 8.5L2 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center;
+}
+
+.dropdownItemLabel {
+  margin-left: 12px;
+}
